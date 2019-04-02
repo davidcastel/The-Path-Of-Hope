@@ -7,7 +7,7 @@ body{
 @keyframes fadeInOut{
 	0% { opacity: 0; }
 	55% { opacity: 1; }
-	100% { opacity: 0%; }
+	100% { opacity: 0; }
 }
 
 @keyframes stay {
@@ -263,7 +263,7 @@ body{
 .ofelia {
 	background-image: url("../Photos/Front%20Page/Ofelia.jpeg");
 	background-position: bottom;
-	/* grid setting */
+
 }
 
 .o{
@@ -275,7 +275,7 @@ body{
 .michelle {
 	background-image: url("../Photos/Front%20Page/Michelle.JPG");
 	background-position: bottom;
-	/* grid setting */
+
 }
 
 .m{
@@ -289,7 +289,7 @@ body{
 .david {
 	background-image: url("../Photos/Front%20Page/David.jpg");
 	background-position: top;
-	/* grid setting */
+
 
 }
 
