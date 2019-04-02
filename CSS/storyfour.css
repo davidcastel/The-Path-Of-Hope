@@ -1,0 +1,337 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+/***************************** // Navigation Bar // ***************************/
+/* sets the  */
+.navigate{
+	width: 12vw;
+	height: 33vh;
+	/* navigate edits*/
+	color: black;
+	transition-duration: 0.5s;
+	/* position */
+	z-index: 11;
+	position: fixed;
+	bottom: 10px;
+	right:20px;
+	/* border settings*/
+	border-radius: 25px 25px 25px 25px;
+	border: 3px solid black;
+	background-color: aliceblue;
+	opacity: 0.5;
+	transform: translateX(10vw);
+}
+
+.navigate:hover{ /* affects the whole navigation bar when you hover over it */
+	opacity: 1;
+	background-color: dimgrey;
+	transform: translateX(0vw);
+	width: 14.5vw;
+	height: 33vh;
+	bottom: 2vh;
+}
+
+/* sets certain settings for all the tabs */
+.tab {
+	/* transition from tab to being hovered over in 1/6 of */
+	transition-duration: 0.6s;
+	font-size: 2vh;
+	/* color */
+	color: black;
+	/* remove underline */
+	text-decoration: none;
+	/* trancparentitcy */
+	opacity: 0.5;
+
+	/* stop the words from wrapping */
+	white-space: nowrap;
+	overflow: hidden;
+
+}
+
+ul{  /* get rid of bullet points and its space for all the li items */
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* sets text alignment and prior padding when the li item is not hovered over */
+li{
+	/* padding of each list item */
+	padding: 2vh 0em 2vh 0em;
+	/* text edits */
+	text-align: center;
+}
+
+.home {
+	/* curverture of the corners */
+	border-radius: 21px 21px 0px 0px;
+	/* padding the home tab */
+	padding: 3.5vh 4.4vw 3.5vh 4.4vw;
+}
+
+/* specific settings for the tab when being hovered over */
+.home:hover {
+	/* font size changes when hovered over */
+	font-size: 2.5vh;
+	padding: 2vh 5.7vw 2vh 5.7vw;
+}
+
+.one{
+	/*padding for the first tab */
+	padding: 3.5vh 2.3vw 3.5vh 2.3vw;
+}
+
+/* specific settings for the tab when being hovered over */
+.one:hover{
+	font-size: 2.5vh;
+	padding: 2vh 2.4vw 2vh 2.4vw;
+}
+
+.two{
+	/* padding for the second tab */
+	padding: 3.5vh 0vw 3.5vh 0vw;
+}
+
+/* specific settings for the tab when being hovered over */
+.two:hover{
+	font-size: 2.5vh;
+	padding: 2vh 0vw 2vh 0vw;
+}
+
+.three{
+	/* padding for the third tab */
+	padding: 3.5vh 2.4vw 3.5vh 2.4vw;
+}
+
+/* specific settings for the tab when being hovered over */
+.three:hover{
+	font-size: 2.5vh;
+	padding: 2vh 2.45vw 2vh 2.45vw;
+}
+
+.four{
+	/* padding for the fourth tab */
+	padding: 3.5vh 2vw 2vh 2vw;
+	/* the curverture of the bottom tab */
+	border-radius: 0px 0px 21px 21px;
+}
+/* specific settings for the tab when being hovered over */
+.four:hover{
+	font-size: 2.5vh;
+	padding: 2vh 2.4vw 2.8vh 2.4vw;
+}
+
+/* affects all the tabs */
+.tab:hover{
+	transform: translate(1);
+	/* text edits */
+	/* Color of text shows as whitesmoke */
+	color: whitesmoke;
+	text-shadow: 0.2vw 0.2vh 9px white;
+	/* box edits */
+	box-shadow: 0px 2vh 10px black;
+	opacity: 1;
+	/* transistion when hovering over */
+	transition-duration: 0.5s;
+	/* color changes to ... */
+	background-color: #444;
+}
+
+/************************************ // story // *****************************/
+.story{
+	top: 0;
+	left: 0;
+	position: absolute;
+
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4vh;
+}
+
+/* // header // */
+.title{
+	text-align: center;
+
+	top: 0;
+	width: 100%;
+	margin-top: -10vh;
+}
+
+h1{
+	/* font edits */
+	color: aliceblue;
+	text-shadow: 1vw 1vh 9px black;
+	font-family: 'Bangers', cursive;
+	font-size: 10vh;
+
+	padding: 45vh 0vw 45vh 0vw;
+	/* background settings */
+	background-image: url("../Photos/Story%204/branch.JPG");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+	min-height: 30vh;
+
+}
+
+/*** // box one // ***/
+.p_one{
+	/* background settings */
+	background-image: url("../Photos/Story%204/branch.JPG");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100%;
+
+	margin-top: -7vh;
+
+}
+
+.txt_one{
+	color: aliceblue;
+	text-shadow: 0.2vw 0.2vh 1px black;
+	padding: 7vh 2vw 7vh 2vw;
+}
+
+/*** // box two // ***/
+.p_two{
+	background-color: #010028;
+	background-image: url("../Photos/Story%204/stars.jpeg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 80%;
+
+	margin-top: -4vh;
+}
+
+.txt_two{
+	padding: 7vh 2vw 7vh 2vw;
+
+	position: relative;
+	left: 45%;
+	width: 50%;
+	color: aliceblue;
+}
+
+/*** // box three // ***/
+.p_three{
+	/* background settings */
+	background-color: antiquewhite;
+	background-image: url("../Photos/Story%204/table.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 60%;
+
+	margin-top: -4vh;
+}
+
+.txt_three{
+	padding: 7vh 2vw 7vh 2vw;
+	width: 50%;
+}
+
+/*** // box four // ***/
+.p_four{
+	background-image: url("../Photos/Story%204/doc.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 45%;
+
+	margin-top: -4vh;
+}
+
+.txt_four{
+	width: 45%;
+	position: relative;
+	left: 50%;
+	padding: 7vh 2vw 7vh 2vw;
+	text-shadow: 0.2vw 0.2vh 6px yellow;
+}
+
+/*** // box five // ***/
+.p_five{
+	/* background setting */
+	background-color: #1c0d72;
+	background-image: url("../Photos/Story%204/thoughts.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left;
+	background-size: 50%;
+
+	margin-top: -4vh;
+}
+
+.txt_five{
+	color: aliceblue;
+	width: 45%;
+	position: relative;
+	left: 50%;
+	padding: 7vh 2vw 7vh 2vw;
+	text-shadow: 0.2vw 0.2vh 1px black;
+
+}
+
+/*** // box six // ***/
+.txt_six{
+	padding: 7vh 2vw 7vh 2vw;
+}
+
+@keyframes glow{
+	0%{text-shadow: 0vw 0vh 0px}
+	40%{text-shadow: 0.2vw 0.2vh 6px black}
+}
+
+.txt_six2{
+	animation: glow 2s linear infinite;
+}
+
+/*** // box seven // ***/
+.p_seven{
+	background-color: black;
+	background-image: url("../Photos/Story%204/tear.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left;
+	background-size: 40%;
+
+	margin-top: -4vh;
+}
+
+.txt_seven{
+	color: aliceblue;
+	padding: 7vh 2vw 7vh 2vw;
+	text-shadow: 0.2vw 0.2vh 6px white;
+	width: 40%;
+	position: relative;
+	left: 52%;
+}
+
+/*** // box eight // ***/
+.p_eight{
+	overflow: hidden;
+	background-color: azure;
+	margin-top: -4vh;
+	margin-bottom: -10vh;
+}
+
+.txt_eight{
+	padding: 7vh 2vw 7vh 2vw;
+}
+
+.txt_eight2{
+	padding: 7vh 2vw 7vh 2vw;
+	position: relative;
+	left: 10%;
+}
+
+.txt_eight3{
+	padding: 7vh 2vw 15vh 2vw;
+	position: relative;
+	left: 55%;
+}
