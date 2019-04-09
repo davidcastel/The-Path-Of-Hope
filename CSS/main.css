@@ -238,7 +238,7 @@ body{
 	opacity: 1;
 	height: 85vh;
 	background-color: white;
-	margin-top: -35.5vh;
+	transform: translate(-250%,0%);
 }
 
 .o, .m, .d{
