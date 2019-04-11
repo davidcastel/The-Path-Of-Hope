@@ -227,7 +227,7 @@ body{
 	overflow-y: hidden;
 	overflow-x: hidden;
 	word-wrap: break-word;
-	transform: translate(-50%, -86%);
+	transform: translate(-50%, 86%);
 	text-align: left;
 }
 
@@ -238,7 +238,7 @@ body{
 	opacity: 1;
 	height: 85vh;
 	background-color: white;
-	transform: translate(-50%,-86%);
+	transform: translate(-50%, 86%);
 }
 
 .o, .m, .d{
