@@ -254,13 +254,11 @@ body{
     background-repeat: no-repeat;
     color: aliceblue;
     grid-row: 3;
-
 }
 
 .ofelia {
     background-image: url("../Photos/Front%20Page/Ofelia.jpeg");
     background-position: bottom;
-
 }
 
 .o{
@@ -270,23 +268,18 @@ body{
 .michelle {
     background-image: url("../Photos/Front%20Page/Michelle.JPG");
     background-position: bottom;
-
 }
 
 .m{
     background-image: url("../Photos/Front%20Page/Michelle4profile.JPG");
     background-position: top;
-
 }
 
 .david {
     background-image: url("../Photos/Front%20Page/David.jpg");
     background-position: top;
-
-
 }
 
 .d{
     background-image: url("../Photos/Front%20Page/David4profile.jpg");
-
 }
