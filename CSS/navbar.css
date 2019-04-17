@@ -27,7 +27,7 @@
 	bottom: 4vh;
 	/* width and height of the nav. bar when it hovers */
 	width: 14.5vw;
-	height: 36vh;
+	height: 35vh;
 }
 
 /* sets certain settings for all the tabs */
@@ -72,7 +72,7 @@ li{
 .home:hover {
 	/* font size changes when hovered over */
 	font-size: 2.5vh;
-	padding: 2.2vh 5.8vw 2vh 5.8vw;
+	padding: 2.2vh 5.6vw 2vh 5.6vw;
 }
 
 
@@ -83,7 +83,7 @@ li{
 /* specific settings for the tab when being hovered over */
 .one:hover{
 	font-size: 2.5vh;
-	padding: 2vh 2.66vw 2vh 2.65vw;
+	padding: 2vh 1.9vw 2vh 1.9vw;
 }
 
 
@@ -93,7 +93,7 @@ li{
 }
 /* specific settings for the tab when being hovered over */
 .two:hover{
-	font-size: 2.5vh;
+	font-size: 2.2vh;
 	padding: 2vh 0.1vw 2vh 0.1vw;
 }
 
