@@ -99,8 +99,16 @@ body{
     animation-delay: 4.3s;
 }
 
-/*********************** // middle quote // *******************/
-.middle {
+/************************** // middle // **********************/
+.middle{
+    /* position of the text */
+    position: absolute;
+    top: 35vh;
+    left: 0vw;   
+}
+
+/*************************** // quote // *****************************/
+.quote {
     /* text begins with an opacity of 0 */
     opacity: 0;
 
@@ -112,15 +120,26 @@ body{
     text-shadow: 0.34vw 0.34vh 4px skyblue, 0.34vw 0.32vh 3px black;
 
     /* position of the text */
-    position: absolute;
-    top: 35vh;
-    left: 0vw;
+
 
     /* After 5 seconds, the animation will last for 595 seconds*/
     animation-name: stay;
     animation-delay: 5s;
     animation-duration: 600s;
 
+}
+
+/************************* // Mission // ***************************/
+.Mission{
+    position: relative;
+    height: 200px;
+    width: 200px;
+
+    background-color: aliceblue;
+    color: red;
+    font-style: normal;
+    font-size: 1vw;
+    opacity: 1;
 }
 
 /************************* // navigate // **************************/
