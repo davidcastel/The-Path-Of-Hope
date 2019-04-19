@@ -1,304 +1,324 @@
 /* the body*/
 body{
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 /***************************  // Key Frames // ***************************/
 @keyframes fadeInOut{
-    0% { opacity: 0; }
-    55% { opacity: 1; }
-    100% { opacity: 0; }
+	0% { opacity: 0; }
+	55% { opacity: 1; }
+	100% { opacity: 0; }
 }
 
 @keyframes stay {
-    0% { opacity: 0; }
-    1% { opacity: 1; }
-    100% { opacity: 1; }
+	0% { opacity: 0; }
+	1% { opacity: 1; }
+	100% { opacity: 1; }
 }
 
 /********** // for the text fading in the home screen // **********/
 @keyframes fadeToRight {
-    0% {
-        position: absolute;
-        opacity: 0;
-        left: -5em;
-    }
-    1% { position: absolute;
-        opacity: 1;
-        left: 10em;
-    }
-    100% {
-        position: absolute;
-        opacity: 1;
-    }
+	0% {
+		position: absolute;
+		opacity: 0;
+		left: -5em;
+	}
+	1% { position: absolute;
+		opacity: 1;
+		left: 10em;
+	}
+	100% {
+		position: absolute;
+		opacity: 1;
+	}
 }
 
 /************************** // homebkg classes // *********************/
 .homebkg {
-    z-index: 1;
-    font-style: italic;
-    font-size: 6vw;
-    height: 78.61vh;
-    width: 100%;
-    color: whitesmoke;
+	z-index: 1;
+	font-style: italic;
+	font-size: 6vw;
+	height: 78.61vh;
+	width: 100%;
+	color: whitesmoke;
 
 }
 
 .skyline{
-    height: 93.37vh;
-    width: 100%;
-    top: 0vh;
-    left: 0vw;
-    position: absolute;
+	height: 93.37vh;
+	width: 100%;
+	top: 0vh;
+	left: 0vw;
+	position: absolute;
 
 }
 
 /************************** // spanish text // *********************/
 .spanish{
-    top: 33.96vh;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	top: 33.96vh;
+	left: 50%;
+	transform: translate(-50%,-50%);
 
 
-    z-index: 1;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    animation-name: fadeInOut;
-    animation-duration: 1.8s;
-    animation-delay: 0.7s;
+	z-index: 1;
+	position: absolute;
+	color: black;
+	opacity: 0;
+	animation-name: fadeInOut;
+	animation-duration: 1.8s;
+	animation-delay: 0.7s;
 }
 
 /************************ // english text // ***********************/
 .english{
-    top: 33.96vh;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	top: 33.96vh;
+	left: 50%;
+	transform: translate(-50%,-50%);
 
 
-    position: absolute;
-    color: black;
-    opacity: 0;
-    animation-name: fadeInOut;
-    animation-duration: 1.8s;
-    animation-delay: 2.5s;
+	position: absolute;
+	color: black;
+	opacity: 0;
+	animation-name: fadeInOut;
+	animation-duration: 1.8s;
+	animation-delay: 2.5s;
 }
 
 /******************** // vietnamese text // ********************/
 .vietnamese{
-    top: 33.96vh;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	top: 33.96vh;
+	left: 50%;
+	transform: translate(-50%,-50%);
 
 
-    position: absolute;
-    color: black;
-    opacity: 0;
-    animation-name: fadeInOut;
-    animation-duration: 1.8s;
-    animation-delay: 4.3s;
+	position: absolute;
+	color: black;
+	opacity: 0;
+	animation-name: fadeInOut;
+	animation-duration: 1.8s;
+	animation-delay: 4.3s;
 }
 
 /************************** // middle // **********************/
-.middle{
-    /* position of the text */
-    position: absolute;
-    top: 35vh;
-    left: 0vw;   
+.flip_text{
+	/* position of the text */
+	position: absolute;
+	background-color: transparent;
+	perspective: 50vw;
+	top: 35vh;
+
+	left: 7vw;
+	height: 20vh;
+	width: 86vw;
+
+}
+
+.flip{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
 
 /*************************** // quote // *****************************/
+.flip_text:hover .flip{
+	transform: rotateY(180deg);
+}
+
+.quote, .Mission{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+
+	/* After 5 seconds, the animation will last for 595 seconds*/
+	opacity: 0;
+	animation-name: stay;
+	animation-delay: 5s;
+	animation-duration: 600s;
+
+}
+
 .quote {
-    /* text begins with an opacity of 0 */
-    opacity: 0;
-
-    /* text edits */
-    font-style: italic;
-    font-size: 3vw;
-    text-align: center;
-    color: whitesmoke;
-    text-shadow: 0.34vw 0.34vh 4px skyblue, 0.34vw 0.32vh 3px black;
-
-    /* position of the text */
-
-
-    /* After 5 seconds, the animation will last for 595 seconds*/
-    animation-name: stay;
-    animation-delay: 5s;
-    animation-duration: 600s;
+	/* text edits */
+	font-style: italic;
+	font-size: 3vw;
+	text-align: center;
+	color: whitesmoke;
+	text-shadow: 0.34vw 0.34vh 4px skyblue, 0.34vw 0.32vh 3px black;
 
 }
 
 /************************* // Mission // ***************************/
-.Mission{
-    position: relative;
-    height: 200px;
-    width: 200px;
+.Mission{	
+	transform: rotateY(180deg);
 
-    background-color: aliceblue;
-    color: red;
-    font-style: normal;
-    font-size: 1vw;
-    opacity: 1;
+	background-color: transparent;
+	color: red;
+	text-shadow: 0.2vw 0.2vh 2px white;
+	font-style: italic;
+	font-size: 2.4vw;
 }
 
 /************************* // navigate // **************************/
 .navigate {
-    top: 0;
-    left: 0;
-    padding: 0vw;
-    position: relative;
-    /* color of the text*/
-    color: black;
-    /*position of it ... */
-    margin: 0vh 5vw 20vh 5vw;
-    /* grid editing */
-    display: grid;
+	top: 0;
+	left: 0;
+	padding: 0vw;
+	position: relative;
+	/* color of the text*/
+	color: black;
+	/*position of it ... */
+	margin: 0vh 5vw 20vh 5vw;
+	/* grid editing */
+	display: grid;
 }
 
 .story {
-    color: black;
-    transition-duration: 0.8s;
-    /* text */
-    text-align: center;
-    font-size: 2.7vw;
-    opacity: 0.6;
-    text-decoration: none;
-    word-wrap: break-word;
+	color: black;
+	transition-duration: 0.8s;
+	/* text */
+	text-align: center;
+	font-size: 2.7vw;
+	opacity: 0.6;
+	text-decoration: none;
+	word-wrap: break-word;
 
-    /* background */
-    background-color: aqua;
-    /* grid settings */
-    padding: 10vh 0vw 7vh 0vw;
+	/* background */
+	background-color: aqua;
+	/* grid settings */
+	padding: 10vh 0vw 7vh 0vw;
 
-    grid-auto-columns: 1fr 1fr 1fr;
+	grid-auto-columns: 1fr 1fr 1fr;
 }
 
 .story:hover{
-    opacity: 1;
-    transition-duration: 1s;
-    box-shadow: 0.34vw 1.32vh 10px black, 0.34vw 1.32vh 10px white;
-    text-shadow: 0.2vw 0.2vh 2px white;
+	opacity: 1;
+	transition-duration: 1s;
+	box-shadow: 0.34vw 1.32vh 10px black, 0.34vw 1.32vh 10px white;
+	text-shadow: 0.2vw 0.2vh 2px white;
 }
 
 .one, .two, .three{
-    /* affexts top three columns in the first row*/
-    width: 29.45vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-row: 1;
+	/* affexts top three columns in the first row*/
+	width: 29.45vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-row: 1;
 }
 
 .one:hover, .two:hover, .three:hover{
-    transform: scale(1);
+	transform: scale(1);
 }
 
 .one {
-    background-image: url("../Photos/Front%20Page/airplane.jpg");
-    background-position: bottom;
+	background-image: url("../Photos/Front%20Page/airplane.jpg");
+	background-position: bottom;
 }
 
 .two {
-    background-image: url("../Photos/Front%20Page/mirror.jpeg");
-    background-position: right;
+	background-image: url("../Photos/Front%20Page/mirror.jpeg");
+	background-position: right;
 }
 
 .three {
-    background-image: url("../Photos/Front%20Page/news.jpeg");
-    background-position: left;
+	background-image: url("../Photos/Front%20Page/news.jpeg");
+	background-position: left;
 
 }
 
 .four {
-    background-image: url("../Photos/Front%20Page/nightsky.jpeg");
-    background-repeat: no-repeat;
-    background-size: 110%;
-    background-position: top;
-    color: aliceblue;
-    /* grid setting */
-    grid-column: 1 / 4;
-    grid-row: 2;
+	background-image: url("../Photos/Front%20Page/nightsky.jpeg");
+	background-repeat: no-repeat;
+	background-size: 110%;
+	background-position: top;
+	color: aliceblue;
+	/* grid setting */
+	grid-column: 1 / 4;
+	grid-row: 2;
 }
 
 .four:hover{
-    background-position: center;
-    background-size: 100%;
-    transform: scale(1);
+	background-position: center;
+	background-size: 100%;
+	transform: scale(1);
 
 }
 
 .info{
-    font-size: 1.56vw;
-    margin: 45vh 1.6vw 1.7vh 1.6vw;
-    color: black;
+	font-size: 1.56vw;
+	margin: 45vh 1.6vw 1.7vh 1.6vw;
+	color: black;
 }
 
 .container{
-    border-style: solid;
-    border-color: black;
-    transition: 0.5s ease;
-    /* transparancy */
-    opacity: 0;
-    overflow: hidden;
-    word-wrap: break-word;
-    text-align: left;
+	border-style: solid;
+	border-color: black;
+	transition: 0.5s ease;
+	/* transparancy */
+	opacity: 0;
+	overflow: hidden;
+	word-wrap: break-word;
+	text-align: left;
 
-    transform: translate(0%,-68%);
-    grid-auto-columns: 1fr 1fr 1fr;
-    width: 29vw;
-    height: 21.6vh;
+	transform: translate(0%,-68%);
+	grid-auto-columns: 1fr 1fr 1fr;
+	width: 29vw;
+	height: 21.6vh;
 }
 
 .container:hover{
-    z-index: 6;
-    overflow-y: hidden;
-    box-shadow: 0px 0px 10px black;
-    transform: translate(0%,-91%);
-    opacity: 1;
-    height: 80vh;
-    background-color: white;
+	z-index: 6;
+	overflow-y: hidden;
+	box-shadow: 0px 0px 10px black;
+	transform: translate(0%,-91%);
+	opacity: 1;
+	height: 80vh;
+	background-color: white;
 }
 
 .o, .m, .d{
-    position: absolute;
+	position: absolute;
 
-    border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 
-    background-size: 100%;
-    background-repeat: no-repeat;
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .ofelia, .michelle, .david{
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color: aliceblue;
-    grid-row: 3;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: aliceblue;
+	grid-row: 3;
 }
 
 .ofelia {
-    background-image: url("../Photos/Front%20Page/Ofelia.jpeg");
-    background-position: bottom;
+	background-image: url("../Photos/Front%20Page/Ofelia.jpeg");
+	background-position: bottom;
 }
 
 .o{
-    background-image: url("../Photos/Front%20Page/Ofelia4profile.jpeg");
+	background-image: url("../Photos/Front%20Page/Ofelia4profile.jpeg");
 }
 
 .michelle {
-    background-image: url("../Photos/Front%20Page/Michelle.JPG");
-    background-position: bottom;
+	background-image: url("../Photos/Front%20Page/Michelle.JPG");
+	background-position: bottom;
 }
 
 .m{
-    background-image: url("../Photos/Front%20Page/Michelle4profile.JPG");
-    background-position: top;
+	background-image: url("../Photos/Front%20Page/Michelle4profile.JPG");
+	background-position: top;
 }
 
 .david {
-    background-image: url("../Photos/Front%20Page/David.jpg");
-    background-position: top;
+	background-image: url("../Photos/Front%20Page/David.jpg");
+	background-position: top;
 }
 
 .d{
-    background-image: url("../Photos/Front%20Page/David4profile.jpg");
+	background-image: url("../Photos/Front%20Page/David4profile.jpg");
 }
