@@ -4,14 +4,17 @@
 	/* width and height of the nav. bar before the hover */
 	width: 12vw;
 	height: 33vh;
+	
 	/* navigate edits*/
 	color: black;
 	transition-duration: 0.5s;
+	
 	/* position */
 	z-index: 11;
 	position: fixed;
-	bottom: 10px;
-	right:20px;
+	bottom: 2vw;
+	right: 2vw;
+	
 	/* border settings*/
 	border-radius: 25px 25px 25px 25px;
 	border: 3px solid black;
@@ -25,26 +28,48 @@
 	background-color: dimgrey;
 	transform: translateX(0vw);
 	bottom: 4vh;
+	
 	/* width and height of the nav. bar when it hovers */
 	width: 14.5vw;
-	height: 35vh;
+	height: 33vh;
 }
 
 /* sets certain settings for all the tabs */
 .tab {
+	position: relative;
+	
 	/* transition from tab to being hovered over in 1/6 of */
 	transition-duration: 0.6s;
 	font-size: 2vh;
+	
 	/* color */
 	color: black;
+	
 	/* remove underline */
 	text-decoration: none;
+	
 	/* trancparentitcy */
 	opacity: 0.5;
 
 	/* stop the words from wrapping */
 	white-space: nowrap;
 	overflow: hidden;
+}
+
+/* affects all the tabs */
+.tab:hover{
+	transform: translate(1);
+	/* text edits */
+	/* Color of text shows as whitesmoke */
+	color: whitesmoke;
+	text-shadow: 0.2vw 0.2vh 9px white;
+	/* box edits */
+	box-shadow: 0vw 1vh 10px black;
+	opacity: 1;
+	/* transistion when hovering over */
+	transition-duration: 0.5s;
+	/* color changes to ... */
+	background-color: #444;
 }
 
 ul{  /* get rid of bullet points and its space for all the li items */
@@ -73,6 +98,8 @@ li{
 	/* font size changes when hovered over */
 	font-size: 2.5vh;
 	padding: 2.2vh 5.6vw 2vh 5.6vw;
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -83,7 +110,7 @@ li{
 /* specific settings for the tab when being hovered over */
 .one:hover{
 	font-size: 2.5vh;
-	padding: 2vh 1.9vw 2vh 1.9vw;
+	padding: 2vh 2.3vw 2vh 2.3vw;
 }
 
 
@@ -94,7 +121,7 @@ li{
 /* specific settings for the tab when being hovered over */
 .two:hover{
 	font-size: 2.2vh;
-	padding: 2vh 0.1vw 2vh 0.1vw;
+	padding: 2vh 0.5vw 2vh 0.5vw;
 }
 
 
@@ -105,7 +132,7 @@ li{
 /* specific settings for the tab when being hovered over */
 .three:hover{
 	font-size: 2.5vh;
-	padding: 2vh 2.8vw 2vh 2.8vw;
+	padding: 2vh 2.4vw 2vh 2.4vw;
 }
 
 
@@ -113,26 +140,10 @@ li{
 	/* padding for the fourth tab */
 	padding: 3.5vh 2vw 2vh 2vw;
 	/* the curverture of the bottom tab */
-	border-radius: 0px 0px 21px 21px;
+	border-radius: 0px 0px 23px 23px;
 }
 /* specific settings for the tab when being hovered over */
 .four:hover{
 	font-size: 2.5vh;
-	padding: 2vh 2.7vw 2.7vh 2.7vw;
-}
-
-/* affects all the tabs */
-.tab:hover{
-	transform: translate(1);
-	/* text edits */
-	/* Color of text shows as whitesmoke */
-	color: whitesmoke;
-	text-shadow: 0.2vw 0.2vh 9px white;
-	/* box edits */
-	box-shadow: 0px 2vh 10px black;
-	opacity: 1;
-	/* transistion when hovering over */
-	transition-duration: 0.5s;
-	/* color changes to ... */
-	background-color: #444;
+	padding: 2vh 2.4vw 2.6vh 2.4vw;
 }
