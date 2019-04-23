@@ -4,17 +4,17 @@
 	/* width and height of the nav. bar before the hover */
 	width: 12vw;
 	height: 33vh;
-	
+
 	/* navigate edits*/
 	color: black;
 	transition-duration: 0.5s;
-	
+
 	/* position */
 	z-index: 11;
 	position: fixed;
 	bottom: 2vw;
 	right: 2vw;
-	
+
 	/* border settings*/
 	border-radius: 25px 25px 25px 25px;
 	border: 3px solid black;
@@ -23,31 +23,33 @@
 	transform: translateX(10vw);
 }
 
-.navigate:hover{ /* affects the whole navigation bar when you hover over it */
+/* affects the whole navigation bar when you hover over it */
+.navigate:hover{ 
 	opacity: 1;
 	background-color: dimgrey;
+	/* transforms in a vertical direction to the left */
 	transform: translateX(0vw);
-	bottom: 4vh;
-	
+
 	/* width and height of the nav. bar when it hovers */
 	width: 14.5vw;
 	height: 33vh;
+	bottom: 4vh;	
 }
 
 /* sets certain settings for all the tabs */
 .tab {
 	position: relative;
-	
+
 	/* transition from tab to being hovered over in 1/6 of */
 	transition-duration: 0.6s;
-	font-size: 2vh;
-	
+	font-size: 1vw;
+
 	/* color */
 	color: black;
-	
+
 	/* remove underline */
 	text-decoration: none;
-	
+
 	/* trancparentitcy */
 	opacity: 0.5;
 
@@ -57,22 +59,23 @@
 }
 
 /* affects all the tabs */
-.tab:hover{
-	transform: translate(1);
-	/* text edits */
+.tab:hover{	
+	/*** text edits ***/
 	/* Color of text shows as whitesmoke */
 	color: whitesmoke;
 	text-shadow: 0.2vw 0.2vh 9px white;
+
 	/* box edits */
 	box-shadow: 0vw 1vh 10px black;
 	opacity: 1;
+
 	/* transistion when hovering over */
-	transition-duration: 0.5s;
-	/* color changes to ... */
+	transition-duration: 0.5s; /* how long to transition */
 	background-color: #444;
 }
 
-ul{  /* get rid of bullet points and its space for all the li items */
+ul{
+	/* get rid of bullet points and its space for all the li items */	
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -81,11 +84,10 @@ ul{  /* get rid of bullet points and its space for all the li items */
 /* sets text alignment and prior padding when the li item is not hovered over */
 li{
 	/* padding of each list item */
-	padding: 2vh 0em 2vh 0em;
+	padding: 2vh 0vw 2vh 0vw;
 	/* text edits */
 	text-align: center;
 }
-
 
 .home {
 	/* curverture of the corners */
@@ -96,10 +98,8 @@ li{
 /* specific settings for the tab when being hovered over */
 .home:hover {
 	/* font size changes when hovered over */
-	font-size: 2.5vh;
+	font-size: 1.3vw;
 	padding: 2.2vh 5.6vw 2vh 5.6vw;
-	width: 100%;
-	height: 100%;
 }
 
 
@@ -109,7 +109,7 @@ li{
 }
 /* specific settings for the tab when being hovered over */
 .one:hover{
-	font-size: 2.5vh;
+	font-size: 1.3vw;
 	padding: 2vh 2.3vw 2vh 2.3vw;
 }
 
@@ -120,7 +120,7 @@ li{
 }
 /* specific settings for the tab when being hovered over */
 .two:hover{
-	font-size: 2.2vh;
+	font-size: 1.13vw;
 	padding: 2vh 0.5vw 2vh 0.5vw;
 }
 
@@ -131,7 +131,7 @@ li{
 }
 /* specific settings for the tab when being hovered over */
 .three:hover{
-	font-size: 2.5vh;
+	font-size: 1.3vw;
 	padding: 2vh 2.4vw 2vh 2.4vw;
 }
 
@@ -144,6 +144,6 @@ li{
 }
 /* specific settings for the tab when being hovered over */
 .four:hover{
-	font-size: 2.5vh;
+	font-size: 1.3vw;
 	padding: 2vh 2.4vw 2.6vh 2.4vw;
 }
