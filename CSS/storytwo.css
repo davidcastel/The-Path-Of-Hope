@@ -5,18 +5,20 @@
 /********************* // story // ********************/
 
 .story{
+	position: absolute;	
 	top: 0;
 	left: 0;
-	position: absolute;
 
+	/* font setting */
 	font-family: 'Caveat', cursive;
-	font-size: 4vh;
+	font-size: 2.4vw;
 }
 
 /*** // header // ***/
 .title{
 	text-align: center;
 
+	position: relative;
 	top: 0vh;
 	width: 100%;
 	margin-top: -10vh;
@@ -24,12 +26,13 @@
 
 h1{
 	font-family: 'Amatic SC', cursive;
-	font-size: 10vh;
+	font-size: 5vw;
 	color: aliceblue;
 	text-shadow: 1vw 1vh 5px black;
 
 	padding: 45vh 0vw 47vh 0vw;
-
+	
+	/* background settings and position */		
 	background-image: url("../Photos/Story%202/his%20wall.jpg");
 	background-attachment: fixed;
 	background-position: center;
@@ -39,9 +42,9 @@ h1{
 
 /*** // box one // ***/
 .p_one{
+	/* background settings and position */	
 	background-image: url("../Photos/Story%202/nightmare.jpeg");
 	background-color: #746007;
-
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -58,13 +61,14 @@ h1{
 
 /*** // box two // ***/
 .p_two{
+	/* background settings and position */		
 	background-image: url("../Photos/Story%202/room.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: left;
 	background-size: 45%;
 
-	margin-top: -4vh
+	margin-top: -7vh
 }
 
 .txt_two{
@@ -76,6 +80,7 @@ h1{
 
 /* // box three // ***/
 .p_three{
+	/* background settings and position */		
 	background-color: bisque;
 	background-image: url("../Photos/Story%202/knob.png");
 	background-position: left;
@@ -83,7 +88,7 @@ h1{
 	background-attachment: fixed;
 	background-size: 80%;
 
-	margin-top: -4vh
+	margin-top: -8vh
 }
 
 .txt_three{
@@ -91,7 +96,6 @@ h1{
 	width: 45%;
 	position: relative;
 	left: 50%;
-
 }
 
 /*** // box four // ***/
@@ -99,9 +103,11 @@ h1{
 @keyframes fly{
 	0%{
 		opacity: 0;
-		margin-top: 40vh;
 	}
-	3%{
+	7%{
+		opacity: 0.3;
+	}
+	20%{
 		opacity: 1;
 		margin-top: 48;
 	}
@@ -110,7 +116,7 @@ h1{
 		margin-top: 28;
 		margin-left: 10vw;
 	}
-	75%{
+	70%{
 		opacity: 0;
 		margin-left: 14vw;
 		margin-top: -5vh;
@@ -125,15 +131,17 @@ h1{
 	position: absolute;
 	left: 10vw;
 	width: 20%;
-	margin-top: 30vh;
-
+	margin-top: 40vh;
+	z-index: 1;
+	
 	animation: fly 5s linear infinite;
 }
 
 .p_four{
+	z-index: 2;
 	background-color: #71c4ea;
 
-	margin-top: -4vh;
+	margin-top: -7vh;
 }
 
 .txt_four{
@@ -142,6 +150,7 @@ h1{
 
 /*** // box five // ***/
 .p_five{
+	/* background settings and position */		
 	background-color: #a2739d;
 	background-image: url("../Photos/Story%202/mirror.jpeg");
 	background-repeat: no-repeat;
@@ -149,11 +158,13 @@ h1{
 	background-attachment: fixed;
 	background-size: 45%;
 
-	margin-top: -4vh;
+	z-index: 3;
+	margin-top: -8vh;
 	padding-bottom: 1vh;
 }
 
 .txt_five{
+	z-index: 4;
 	padding: 7vh 2vw 7vh 2vw;
 	width: 45%;
 }
