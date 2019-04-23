@@ -11,7 +11,7 @@
 	position: absolute;
 
 	font-family: 'Nanum Pen Script', cursive;
-	font-size: 5vh;
+	font-size: 2.5vw;
 }
 
 /*** // header // ***/
@@ -22,13 +22,15 @@
 }
 
 h1{
+	/* font settings */
 	font-family: 'Caveat Brush', cursive;
 	color: #eb662d;
 	text-shadow: 1vw 1vh 5px black;
-	font-size: 10vh;
+	font-size: 5vw;
 
 	padding: 45vh 0vw 47vh 0vw;
 
+	/* background settings and position */	
 	background-image: url("../Photos/Story%203/firecandle.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -38,6 +40,7 @@ h1{
 
 /* // box one // */
 .p_one{
+	/* background settings and position */		
 	background-color: saddlebrown;
 	background-image: url("../Photos/Story%203/mag.png");
 	background-repeat: no-repeat;
@@ -45,10 +48,11 @@ h1{
 	background-position: center;
 	background-size: 45%;
 
-	margin-top: -7vh;
+	margin-top: -9vh;
 }
 
 .txt_one{
+	/* text position and settings */
 	position: relative;
 	color: black;
 	width: 45%;
@@ -56,6 +60,7 @@ h1{
 }
 
 .txt_one2{
+	/* text position and settings */
 	position: relative;
 	color: aliceblue;
 	width: 30%;
@@ -66,6 +71,7 @@ h1{
 
 /* // box two // */
 .p_two{
+	/* background settings and position */		
 	background-color: #d6ec8a;
 	background-image: url("../Photos/Story%203/pre-look.jpeg");
 	background-attachment: fixed;
@@ -78,6 +84,7 @@ h1{
 }
 
 .txt_two{
+	/* text position and settings */
 	padding: 7vh 0vw 15vh 2.5vw;
 	position: relative;
 	left: 46%;
@@ -86,6 +93,7 @@ h1{
 
 /* // box three // */
 .p_three{
+	/* background settings and position */		
 	background-color: #d6ec8a;
 	background-image: url("../Photos/Story%203/table.png");
 	background-attachment: fixed;
@@ -97,6 +105,7 @@ h1{
 }
 
 .txt_three{
+	/* text position and settings */
 	position: relative;
 	left: 4vw;
 	padding: 7vh 2vw 7vh 2vw;
@@ -106,6 +115,7 @@ h1{
 
 /* // box four // */
 .p_four{
+	/* background settings and position */		
 	background-image: url("../Photos/Story%203/family.jpg");
 	background-attachment: fixed;
 	background-position: bottom;
@@ -113,16 +123,17 @@ h1{
 	background-size: 30%;
 
 	margin-top: -5vh;
-
 }
 
 .txt_four{
+	/* text position and settings */
 	padding: 10vh 2vw 0vh 2vw;
 	position: relative;
 	width: 45%;
 }
 
 .txt_four2{
+	/* text position and settings */
 	padding: 0vh 2vw 0vh 2vw;
 	position: relative;
 	width: 40%;
@@ -132,8 +143,8 @@ h1{
 
 /* // box five // */
 .p_five{
+	/* background settings and position */		
 	background-color: #855002;
-
 	background-image: url("../Photos/Story%203/buisness.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -144,6 +155,7 @@ h1{
 }
 
 .txt_five{
+	/* text position and settings */
 	color: aliceblue;
 	padding: 7vh 2vw 7vh 2vw;
 
@@ -155,6 +167,7 @@ h1{
 
 /* // box six // */
 .p_six{
+	/* background settings and position */		
 	background-color: burlywood;
 	background-image: url("../Photos/Story%203/chains.png");
 	background-repeat: no-repeat;
@@ -175,6 +188,7 @@ h1{
 }
 
 .txt_six{
+	/* text position and settings */
 	color: aliceblue;
 	padding: 7vh 2vw 7vh 2vw;
 	text-shadow: 1vw 1vh 6px black;
@@ -183,12 +197,14 @@ h1{
 }
 
 .txt_six2{
+	/* text position and animation */
 	text-align: center;
 	animation: shade 3s linear infinite;
 }
 
 /*** // box seven // ***/
 .p_seven{
+	/* background settings and position */			
 	background-color: antiquewhite;
 	background-image: url("../Photos/Story%203/door.png");
 	background-repeat: no-repeat;
@@ -196,10 +212,10 @@ h1{
 	background-position: left;
 	background-size: 60%;
 	margin-top: -5vh
-
 }
 
 .txt_seven{
+	/* text position and settings */
 	padding: 7vh 2vw 7vh 2vw;
 	width: 45%;
 	position: relative;
@@ -208,6 +224,7 @@ h1{
 
 /*** // box eight // ***/
 .p_eight{
+	/* background settings and position */			
 	background-color: #b0beff;
 	background-image: url("../Photos/Story%203/the_daily.jpeg");
 	background-attachment: fixed;
@@ -219,6 +236,7 @@ h1{
 }
 
 .txt_eight{
+	/* text settings */
 	width: 45%;
 	padding: 7vh 2vw 7vh 2vw;
 
@@ -226,6 +244,7 @@ h1{
 
 /*** // box nine // ***/
 .p_nine{
+	/* background settings and position */		
 	background-image: url("../Photos/Story%203/blossom.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -237,6 +256,7 @@ h1{
 }
 
 .txt_nine{
+	/* text position and settings */
 	width: 50%;
 	position: relative;
 	left: 45%;
