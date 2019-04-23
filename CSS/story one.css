@@ -10,13 +10,13 @@ body {
 
 /************************************ // Story // ********************************************/
 .story{
+	position: absolute;
 	top: 0;
 	left: 0;
-	position: absolute;
 
+	/* font edits */
 	font-family: 'Indie Flower', cursive;
-	font-size: 4vh;
-
+	font-size: 2vw;
 }
 
 /*********************************** // header // ***************************/
@@ -24,18 +24,22 @@ body {
 	background-color: aliceblue;
 	text-align: center;
 
+	position: relative;
 	top: 0vh;
+	left: 0;
 	width: 100%;
-	margin-top: -10vh;
+	margin-top:-10vh;
 }
 
 h1{
 	color: aliceblue;
 	font-family: 'Permanent Marker', cursive;
-	font-size: 10vh;
+	font-size: 5vw;
 	text-shadow: 1vw 1vh 5px black;
 
 	padding: 45vh 0vw 45vh 0vw;
+
+	/* background settings and position */	
 	background-image: url("../Photos/Story%201/bright_bw.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -45,11 +49,12 @@ h1{
 
 /* //box one// */
 .p_one{
+	position: relative;
 	margin-top: -6.9vh;
-	min-height: 90vh;;
+	min-height: 80vh;;
 	padding: 12vh 2vw 11vh 2vw;
 
-
+	/* background settings and position */
 	background-image: url("../Photos/Story%201/sun.png");
 	background-color: skyblue;
 	background-repeat: no-repeat;
@@ -86,6 +91,7 @@ h1{
 
 /* // box three // */
 .p_three{
+	/* background settings and position */	
 	background-image: url("../Photos/Story%201/lie.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -104,8 +110,8 @@ h1{
 /* // box four // */
 
 @keyframes fly{
-	0%{
-		left: -20%;
+	0%{ 
+		left: -20%; 
 	}
 	40%{
 		margin-top: 35vh;
@@ -144,12 +150,13 @@ h1{
 	position: absolute;
 	margin-top: 145vh;
 	width: 20%;
-	
+
 	animation: fly_rev 4s linear infinite;
 	animation-direction: reverse;
 }
 
 .p_four{
+	/* background settings and position */
 	background-color: #70dbff;
 	background-image: url("../Photos/Story%201/Travel2.jpeg");
 	background-repeat: no-repeat;
@@ -166,12 +173,11 @@ h1{
 
 	position: relative;
 	left: 43%;
-
-
 }
 
 /* // box five // */
 .p_five{
+	/* background settings and position */
 	background-image: url("../Photos/Story%201/scared.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -182,20 +188,21 @@ h1{
 }
 
 .txt_five{
+	position: relative;	
 	color: aliceblue;
 	padding: 10vh 5vw 10vh 5vw;
-	position: relative;
 }
 
 /* // box six // */
 .p_six{
+	/* background settings and position */	
 	background-color: #7374c4;
 	background-image: url("../Photos/Story%201/Bed3.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: right;
 	background-size: 50%;
-	
+
 	margin-top: -4vh;
 }
 
@@ -208,12 +215,13 @@ h1{
 
 /* // box seven // */
 .p_seven{
+	/* background settings and position */		
 	background-image: url("../Photos/Story%201/cap_gown.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size: 100%;
-	
+
 	margin-top: -4vh;
 	padding-bottom: 7vh;
 	min-height: 100vh;
@@ -223,7 +231,7 @@ h1{
 	position: relative;
 	left: 35%;
 	color: wheat;
-	
+
 	padding: 30vh 3vw 7vh 3vw;
 	text-shadow: 0.1vw 0.1vh 5px;
 	width: 50%;
