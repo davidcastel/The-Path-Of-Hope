@@ -8,8 +8,9 @@
 	left: 0;
 	position: absolute;
 
+	/* font settings */
 	font-family: 'Permanent Marker', cursive;
-	font-size: 4vh;
+	font-size: 2vw;
 }
 
 /* // header // */
@@ -26,7 +27,7 @@ h1{
 	color: aliceblue;
 	text-shadow: 1vw 1vh 9px black;
 	font-family: 'Bangers', cursive;
-	font-size: 10vh;
+	font-size: 6vw;
 
 	padding: 45vh 0vw 45vh 0vw;
 	/* background settings */
@@ -37,7 +38,6 @@ h1{
 	background-size: 100%;
 
 	min-height: 30vh;
-
 }
 
 /*** // box one // ***/
@@ -49,11 +49,11 @@ h1{
 	background-position: center;
 	background-size: 100%;
 
-	margin-top: -7vh;
-
+	margin-top: -9vh;
 }
 
 .txt_one{
+	/* text settings */
 	color: aliceblue;
 	text-shadow: 0.2vw 0.2vh 1px black;
 	padding: 7vh 2vw 7vh 2vw;
@@ -61,6 +61,7 @@ h1{
 
 /*** // box two // ***/
 .p_two{
+	/* background settings */	
 	background-color: #010028;
 	background-image: url("../Photos/Story%204/stars.jpeg");
 	background-attachment: fixed;
@@ -68,10 +69,11 @@ h1{
 	background-position: top;
 	background-size: 80%;
 
-	margin-top: -4vh;
+	margin-top: -6vh;
 }
 
 .txt_two{
+	/* text position and settings */
 	padding: 7vh 2vw 7vh 2vw;
 
 	position: relative;
@@ -94,12 +96,14 @@ h1{
 }
 
 .txt_three{
+	/* text  settings */
 	padding: 7vh 2vw 7vh 2vw;
-	width: 50%;
+	width: 55%;
 }
 
 /*** // box four // ***/
 .p_four{
+	/* background settings */	
 	background-image: url("../Photos/Story%204/doc.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -110,6 +114,7 @@ h1{
 }
 
 .txt_four{
+	/* text position and settings */
 	width: 45%;
 	position: relative;
 	left: 50%;
@@ -131,6 +136,7 @@ h1{
 }
 
 .txt_five{
+	/* text position and settings */
 	color: aliceblue;
 	width: 45%;
 	position: relative;
@@ -142,20 +148,23 @@ h1{
 
 /*** // box six // ***/
 .txt_six{
+	/* text settings */
 	padding: 7vh 2vw 7vh 2vw;
 }
 
 @keyframes glow{
-	0%{text-shadow: 0vw 0vh 0px}
-	40%{text-shadow: 0.2vw 0.2vh 6px black}
+	0%{ text-shadow: 0vw 0vh 0px }
+	40%{ text-shadow: 0.2vw 0.2vh 6px black }
 }
 
 .txt_six2{
+	/* text animation*/
 	animation: glow 2s linear infinite;
 }
 
 /*** // box seven // ***/
 .p_seven{
+	/* background settings */	
 	background-color: black;
 	background-image: url("../Photos/Story%204/tear.jpeg");
 	background-repeat: no-repeat;
@@ -167,9 +176,10 @@ h1{
 }
 
 .txt_seven{
+	/* text position and settings */
 	color: aliceblue;
 	padding: 7vh 2vw 7vh 2vw;
-	text-shadow: 0.2vw 0.2vh 6px white;
+	text-shadow: 0.1vw 0.2vh 4px white;
 	width: 40%;
 	position: relative;
 	left: 52%;
@@ -177,6 +187,7 @@ h1{
 
 /*** // box eight // ***/
 .p_eight{
+	/* div settings */
 	overflow: hidden;
 	background-color: azure;
 	margin-top: -4vh;
@@ -184,16 +195,19 @@ h1{
 }
 
 .txt_eight{
+	/* text settings */
 	padding: 7vh 2vw 7vh 2vw;
 }
 
 .txt_eight2{
+	/* text position and settings */
 	padding: 7vh 2vw 7vh 2vw;
 	position: relative;
 	left: 10%;
 }
 
 .txt_eight3{
+	/* text position and settings */
 	padding: 7vh 2vw 15vh 2vw;
 	position: relative;
 	left: 55%;
