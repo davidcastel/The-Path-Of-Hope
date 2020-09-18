@@ -4,6 +4,8 @@ I collaberated with two other students to build this website that tells immigran
 
 Stories are told through a children's book theme with a parallax CSS affect and CSS animations. :art:
 
+> This website is currently underdevelopment using newer tools to allow for responsivness
+
 ### This Project was created with :wrench:
 <p>
   <!-- CSS -->
